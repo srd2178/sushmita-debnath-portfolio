@@ -1,454 +1,126 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sushmita Debnath | Film + CS</title>
-    <meta
-      name="description"
-      content="Portfolio of Sushmita Debnath: film/creative work and computer science projects."
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sushmita Debnath</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <h1 class="site-title">sushmita debnath</h1>
 
-  <body>
-    <!-- Top nav -->
-    <header class="topbar" id="top">
-      <div class="container topbar__inner">
-        <a class="brand" href="#top" aria-label="Home">
-          <span class="brand__dot" aria-hidden="true"></span>
-          <span class="brand__name">Sushmita Debnath</span>
-        </a>
+      <nav class="site-nav">
+        <a href="#about">about me</a>
+        <span>|</span>
+        <a href="#film">film</a>
+        <span>|</span>
+        <a href="#cs">cs</a>
+      </nav>
+    </div>
+  </header>
 
-        <nav class="nav">
-          <a href="#work">Work</a>
-          <a href="#about">About</a>
-          <a href="#experience">Experience</a>
-          <a href="#contact">Contact</a>
-        </nav>
-
-        <div class="topbar__cta">
-          <a class="btn btn--ghost" href="SDebnath_Resume%20(1).pdf" target="_blank" rel="noopener">
-            CS Resume
-          </a>
-          <a class="btn" href="SDebnath_FResume.pdf" target="_blank" rel="noopener">
-            Film Resume
-          </a>
-        </div>
-
-        <button class="menu" id="menuBtn" aria-label="Open menu" aria-expanded="false">
-          <span></span><span></span><span></span>
-        </button>
+  <main class="homepage">
+    <section class="hero-gallery">
+      <div class="gallery-item gallery-small">
+        <img src="images/boom.jpg" alt="Sushmita working on set with audio equipment" />
       </div>
 
-      <div class="mobileNav" id="mobileNav" aria-hidden="true">
-        <a href="#work">Work</a>
-        <a href="#about">About</a>
-        <a href="#experience">Experience</a>
-        <a href="#contact">Contact</a>
-        <div class="mobileNav__buttons">
-          <a class="btn btn--ghost" href="SDebnath_Resume%20(1).pdf" target="_blank" rel="noopener">CS Resume</a>
-          <a class="btn" href="SDebnath_FResume.pdf" target="_blank" rel="noopener">Film Resume</a>
-        </div>
+      <div class="gallery-item gallery-large">
+        <img src="images/group.jpg" alt="Group photo from film production" />
       </div>
-    </header>
 
-    <!-- Hero -->
-    <main>
-      <section class="hero">
-        <div class="container hero__grid">
-          <div class="hero__copy">
-            <p class="kicker">Film Producer • Product Builder • CS @ Barnard/Columbia</p>
-            <h1>
-              I build stories you can feel
-              <span class="muted">and</span>
-              systems you can ship.
-            </h1>
-            <p class="lede">
-              I’m a filmmaker and computer scientist working across production, product, and engineering.
-              I like projects where craft meets constraints: a shoot schedule, a user flow, a database schema.
-            </p>
+      <div class="gallery-item gallery-small">
+        <img src="images/camera.jpg" alt="Sushmita holding a camera in a subway station" />
+      </div>
+    </section>
 
-            <div class="hero__actions">
-              <a class="btn" href="#work">See featured work</a>
-              <a class="btn btn--ghost" href="#contact">Let’s collaborate</a>
-            </div>
+    <section class="intro" id="about">
+      <p>
+        Sushmita is a Barnard student with a background in computer science and a deep passion
+        for filmmaking. Her work moves between front end design, product thinking, and film production,
+        bringing together technical structure and creative storytelling.
+      </p>
+    </section>
 
-            <div class="hero__chips" aria-label="Highlights">
-              <span class="chip">Sapphire (CPO)</span>
-              <span class="chip">Athena Film Festival</span>
-              <span class="chip">Shopfunder (SWE)</span>
-              <span class="chip">Studio 292</span>
-            </div>
-          </div>
+    <section class="featured-links">
+      <a href="#film" class="feature-card">
+        <h2>film</h2>
+        <p>
+          Producing, directing, festival work, and creative projects.
+        </p>
+      </a>
 
-          <div class="hero__panel">
-            <div class="panel">
-              <div class="panel__top">
-                <h2 class="panel__title">Two lenses, one portfolio</h2>
-                <p class="panel__subtitle">
-                  Toggle a view, or browse everything together.
-                </p>
-              </div>
+      <a href="#cs" class="feature-card">
+        <h2>cs</h2>
+        <p>
+          Software engineering, product design, web development, and technical builds.
+        </p>
+      </a>
+    </section>
 
-              <div class="toggle" role="tablist" aria-label="Portfolio focus">
-                <button class="toggle__btn is-active" data-focus="all" role="tab" aria-selected="true">
-                  All
-                </button>
-                <button class="toggle__btn" data-focus="film" role="tab" aria-selected="false">
-                  Film / Creative
-                </button>
-                <button class="toggle__btn" data-focus="tech" role="tab" aria-selected="false">
-                  CS / Technical
-                </button>
-              </div>
+    <section class="content-section" id="film">
+      <div class="section-heading">
+        <h2>film</h2>
+      </div>
 
-              <div class="panel__stats">
-                <div class="stat">
-                  <div class="stat__num">4+</div>
-                  <div class="stat__label">Short films overseen</div>
-                </div>
-                <div class="stat">
-                  <div class="stat__num">5k+</div>
-                  <div class="stat__label">Records tracked & organized</div>
-                </div>
-                <div class="stat">
-                  <div class="stat__num">3.88</div>
-                  <div class="stat__label">GPA (CS)</div>
-                </div>
-              </div>
+      <div class="project-grid">
+        <article class="project-card">
+          <h3>The One Train is Delayed</h3>
+          <p>
+            Executive Producer and Vice President overseeing development, branding, and production workflows
+            for student film projects.
+          </p>
+        </article>
 
-              <div class="panel__note">
-                <span class="badge">Currently</span>
-                <p>
-                  Building <strong>Sapphire</strong> and supporting the <strong>Athena Film Festival</strong> Doc Pitch showcase.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+        <article class="project-card">
+          <h3>Athena Film Festival</h3>
+          <p>
+            Documentary Pitch Student Lead supporting program logistics, coordination, and event production.
+          </p>
+        </article>
 
-      <!-- Work -->
-      <section class="section" id="work">
-        <div class="container">
-          <div class="section__head">
-            <h2>Featured work</h2>
-            <p>
-              A curated mix of film/creative production and technical builds. Replace the placeholders with your real links and descriptions.
-            </p>
-          </div>
+        <article class="project-card">
+          <h3>Studio 292</h3>
+          <p>
+            Produced student short films by managing schedules, locations, cast and crew communication,
+            and day to day production needs.
+          </p>
+        </article>
+      </div>
+    </section>
 
-          <div class="filters">
-            <button class="pill is-active" data-filter="all" aria-pressed="true">All</button>
-            <button class="pill" data-filter="film" aria-pressed="false">Film</button>
-            <button class="pill" data-filter="tech" aria-pressed="false">Tech</button>
-            <button class="pill" data-filter="product" aria-pressed="false">Product</button>
-          </div>
+    <section class="content-section" id="cs">
+      <div class="section-heading">
+        <h2>cs</h2>
+      </div>
 
-          <div class="grid" id="projectGrid">
-            <!-- FILM -->
-            <article class="card" data-tags="film">
-              <div class="card__meta">
-                <span class="tag">Film</span>
-                <span class="dotSep">•</span>
-                <span class="tag tag--soft">Production</span>
-              </div>
-              <h3 class="card__title">The One Train is Delayed</h3>
-              <p class="card__desc">
-                Executive Producer / Vice President. Rebrand, slate planning, schedules, weekly development & production meetings.
-              </p>
-              <div class="card__links">
-                <a class="link" href="#" target="_blank" rel="noopener">Trailer / Reel</a>
-                <a class="link" href="#" target="_blank" rel="noopener">Press / Photos</a>
-              </div>
-            </article>
+      <div class="project-grid">
+        <article class="project-card">
+          <h3>Sapphire</h3>
+          <p>
+            Co-founder and Chief Product Officer for a sapphic dating app, leading product vision,
+            interface design, and technical development.
+          </p>
+        </article>
 
-            <article class="card" data-tags="film">
-              <div class="card__meta">
-                <span class="tag">Film</span>
-                <span class="dotSep">•</span>
-                <span class="tag tag--soft">Festival</span>
-              </div>
-              <h3 class="card__title">Athena Film Festival Doc Pitch</h3>
-              <p class="card__desc">
-                Student Lead supporting showcase production: schedules, materials, guest lists, slide ops, program edits.
-              </p>
-              <div class="card__links">
-                <a class="link" href="#" target="_blank" rel="noopener">Event page</a>
-                <a class="link" href="#" target="_blank" rel="noopener">Deck sample</a>
-              </div>
-            </article>
+        <article class="project-card">
+          <h3>Shopfunder</h3>
+          <p>
+            Worked on responsive web redesigns, workflow integrations, and data systems to improve
+            customer capture and usability.
+          </p>
+        </article>
 
-            <article class="card" data-tags="film">
-              <div class="card__meta">
-                <span class="tag">Film</span>
-                <span class="dotSep">•</span>
-                <span class="tag tag--soft">Producing</span>
-              </div>
-              <h3 class="card__title">Studio 292 Shorts</h3>
-              <p class="card__desc">
-                Project Producer: logistics, locations, schedules, and day-to-day operations supporting directors’ creative vision.
-              </p>
-              <div class="card__links">
-                <a class="link" href="#" target="_blank" rel="noopener">Work samples</a>
-                <a class="link" href="#" target="_blank" rel="noopener">Credits</a>
-              </div>
-            </article>
-
-            <!-- TECH -->
-            <article class="card" data-tags="tech product">
-              <div class="card__meta">
-                <span class="tag">Tech</span>
-                <span class="dotSep">•</span>
-                <span class="tag tag--soft">Product</span>
-              </div>
-              <h3 class="card__title">Sapphire</h3>
-              <p class="card__desc">
-                Co-Founder & CPO. Product vision + roadmap, React Native (Expo) UI system, and iteration on matching + UX.
-              </p>
-              <div class="card__links">
-                <a class="link" href="#" target="_blank" rel="noopener">Case study</a>
-                <a class="link" href="#" target="_blank" rel="noopener">UI screenshots</a>
-              </div>
-            </article>
-
-            <article class="card" data-tags="tech">
-              <div class="card__meta">
-                <span class="tag">Tech</span>
-                <span class="dotSep">•</span>
-                <span class="tag tag--soft">Web</span>
-              </div>
-              <h3 class="card__title">Shopfunder Website + Lead Flow</h3>
-              <p class="card__desc">
-                Responsive redesign + Jotform workflow integration to reduce friction and improve customer acquisition.
-              </p>
-              <div class="card__links">
-                <a class="link" href="#" target="_blank" rel="noopener">Live site</a>
-                <a class="link" href="#" target="_blank" rel="noopener">Write-up</a>
-              </div>
-            </article>
-
-            <article class="card" data-tags="tech">
-              <div class="card__meta">
-                <span class="tag">Tech</span>
-                <span class="dotSep">•</span>
-                <span class="tag tag--soft">Data</span>
-              </div>
-              <h3 class="card__title">Loan Intake Validator</h3>
-              <p class="card__desc">
-                Built a web app to validate form responses against servicing requirements and reduce processing errors.
-              </p>
-              <div class="card__links">
-                <a class="link" href="#" target="_blank" rel="noopener">Demo</a>
-                <a class="link" href="#" target="_blank" rel="noopener">Code</a>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <!-- About -->
-      <section class="section section--alt" id="about">
-        <div class="container about">
-          <div>
-            <h2>About</h2>
-            <p>
-              I study Computer Science at Barnard/Columbia and work in film production and festival programming.
-              On the technical side, I build products end-to-end, from research and prototyping to implementation.
-              On the creative side, I produce projects by turning big ideas into real schedules, crews, and finished work.
-            </p>
-
-            <div class="about__cols">
-              <div class="mini">
-                <h3>Film toolkit</h3>
-                <ul>
-                  <li>Producing, scheduling, on-set ops</li>
-                  <li>Festival support, guest experience</li>
-                  <li>Adobe Creative Suite, AV systems</li>
-                </ul>
-              </div>
-
-              <div class="mini">
-                <h3>Tech toolkit</h3>
-                <ul>
-                  <li>React Native (Expo), TypeScript</li>
-                  <li>Python, Java, C/C++, SQL, Swift</li>
-                  <li>Git/GitHub, Flask, MongoDB</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <aside class="about__aside">
-            <div class="callout">
-              <h3>Quick links</h3>
-              <div class="callout__buttons">
-                <a class="btn btn--ghost" href="SDebnath_Resume%20(1).pdf" target="_blank" rel="noopener">CS Resume</a>
-                <a class="btn" href="SDebnath_FResume.pdf" target="_blank" rel="noopener">Film Resume</a>
-              </div>
-
-              <div class="callout__links">
-                <a class="link" href="https://www.linkedin.com/in/sushmita-debnath/" target="_blank" rel="noopener">LinkedIn</a>
-                <a class="link" href="https://github.com/srd2178" target="_blank" rel="noopener">GitHub</a>
-                <a class="link" href="mailto:srd2178@columbia.edu">Email</a>
-              </div>
-            </div>
-          </aside>
-        </div>
-      </section>
-
-      <!-- Experience -->
-      <section class="section" id="experience">
-        <div class="container">
-          <div class="section__head">
-            <h2>Experience snapshot</h2>
-            <p>A quick “why trust me with your project” section.</p>
-          </div>
-
-          <div class="timeline">
-            <div class="row">
-              <div class="when">Oct 2025 – Present</div>
-              <div class="what">
-                <h3>Athena Film Festival • Documentary Pitch Student Lead</h3>
-                <p>Coordinating production materials, schedules, and on-site operations for the Doc Pitch showcase.</p>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="when">Oct 2024 – Present</div>
-              <div class="what">
-                <h3>Sapphire • Co-Founder & Chief Product Officer</h3>
-                <p>Product vision, roadmap, UX system, and iteration on matching + engagement loops.</p>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="when">Jun 2025 – Dec 2025</div>
-              <div class="what">
-                <h3>Shopfunder • Software Engineering Intern</h3>
-                <p>Responsive website + workflow integrations; CRM/data tooling to improve lead capture and tracking.</p>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="when">Sep 2023 – Present</div>
-              <div class="what">
-                <h3>The One Train is Delayed • Executive Producer / VP</h3>
-                <p>Rebrand, project coordination, and end-to-end production oversight across short film slate.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Contact -->
-      <section class="section section--alt" id="contact">
-        <div class="container contact">
-          <div>
-            <h2>Contact</h2>
-            <p>
-              If you’re building something that needs both narrative instinct and technical follow-through,
-              I’d love to hear about it.
-            </p>
-
-            <div class="contact__buttons">
-              <a class="btn" href="mailto:srd2178@columbia.edu">Email me</a>
-              <a class="btn btn--ghost" href="https://www.linkedin.com/in/sushmita-debnath/" target="_blank" rel="noopener">LinkedIn</a>
-            </div>
-          </div>
-
-          <div class="contact__card">
-            <div class="contact__line">
-              <span class="label">Email</span>
-              <a class="value" href="mailto:srd2178@columbia.edu">srd2178@columbia.edu</a>
-            </div>
-            <div class="contact__line">
-              <span class="label">GitHub</span>
-              <a class="value" href="https://github.com/srd2178" target="_blank" rel="noopener">github.com/srd2178</a>
-            </div>
-            <div class="contact__line">
-              <span class="label">Based</span>
-              <span class="value">NYC</span>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <footer class="footer">
-        <div class="container footer__inner">
-          <p>© <span id="year"></span> Sushmita Debnath</p>
-          <a class="link" href="#top">Back to top</a>
-        </div>
-      </footer>
-    </main>
-
-    <script>
-      // Mobile nav
-      const menuBtn = document.getElementById("menuBtn");
-      const mobileNav = document.getElementById("mobileNav");
-
-      menuBtn?.addEventListener("click", () => {
-        const expanded = menuBtn.getAttribute("aria-expanded") === "true";
-        menuBtn.setAttribute("aria-expanded", String(!expanded));
-        mobileNav.classList.toggle("is-open");
-        mobileNav.setAttribute("aria-hidden", String(expanded));
-      });
-
-      // Year
-      document.getElementById("year").textContent = new Date().getFullYear();
-
-      // Focus toggle (hero)
-      const focusButtons = document.querySelectorAll(".toggle__btn");
-      const pills = document.querySelectorAll(".pill");
-      const cards = document.querySelectorAll(".card");
-
-      const setActive = (btns, activeBtn) => {
-        btns.forEach((b) => {
-          const isActive = b === activeBtn;
-          b.classList.toggle("is-active", isActive);
-          b.setAttribute("aria-selected", String(isActive));
-          b.setAttribute("aria-pressed", String(isActive));
-        });
-      };
-
-      const applyFilter = (filter) => {
-        cards.forEach((card) => {
-          const tags = (card.getAttribute("data-tags") || "").split(" ");
-          const show = filter === "all" ? true : tags.includes(filter);
-          card.style.display = show ? "" : "none";
-        });
-      };
-
-      focusButtons.forEach((btn) => {
-        btn.addEventListener("click", () => {
-          setActive(focusButtons, btn);
-          const filter = btn.dataset.focus || "all";
-          // Map hero "tech/film/all" to same grid filters
-          applyFilter(filter === "all" ? "all" : filter);
-          // Sync pills
-          pills.forEach((p) => p.classList.toggle("is-active", p.dataset.filter === filter));
-        });
-      });
-
-      pills.forEach((pill) => {
-        pill.addEventListener("click", () => {
-          const filter = pill.dataset.filter || "all";
-          pills.forEach((p) => {
-            const on = p === pill;
-            p.classList.toggle("is-active", on);
-            p.setAttribute("aria-pressed", String(on));
-          });
-          applyFilter(filter);
-
-          // Sync hero toggle
-          focusButtons.forEach((b) => {
-            const on = (b.dataset.focus || "all") === filter;
-            b.classList.toggle("is-active", on);
-            b.setAttribute("aria-selected", String(on));
-          });
-        });
-      });
-    </script>
-  </body>
+        <article class="project-card">
+          <h3>Technical Projects</h3>
+          <p>
+            Experience across React Native, TypeScript, Python, Java, SQL, Swift, UI/UX, and product-oriented builds.
+          </p>
+        </article>
+      </div>
+    </section>
+  </main>
+</body>
 </html>
