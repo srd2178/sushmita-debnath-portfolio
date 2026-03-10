@@ -346,4 +346,10 @@ img {
   .film-gallery-copy h4 {
     font-size: 1.25rem;
   }
+  .film-festival {
+  font-size: 0.9rem;
+  color: #9e9e9e;
+  margin-bottom: 0.5rem;
+  font-style: italic;
+}
 }
